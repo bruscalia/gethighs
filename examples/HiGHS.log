@@ -1,0 +1,43 @@
+Running HiGHS 1.4.0 [date: 1970-01-01, git hash: bcf6c0b22]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+ERROR:   Bound for LI/UI/SI column "x1" is 1e+21: not integer
+ERROR:   Bound for LI/UI/SI column "x2" is 1e+21: not integer
+Number of LI entries in BOUNDS section is 2
+Number of UI entries in BOUNDS section is 2
+Cols:           2 upper bounds exceeding        1e+20 are treated as +Infinity
+MIP  model1673912248339857400 has 2 rows; 2 cols; 4 nonzeros; 2 integer variables
+Presolving model
+2 rows, 2 cols, 4 nonzeros
+2 rows, 2 cols, 4 nonzeros
+Objective function is integral with scale 1
+
+Solving MIP model with:
+   2 rows
+   2 cols (0 binary, 2 integer, 0 implied int., 0 continuous)
+   4 nonzeros
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+     Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   31              -inf                 inf        0      0      0         0     0.0s
+ S       0       0         0   0.00%   31              17                82.35%        0      0      0         0     0.0s
+ T       0       0         0   0.00%   19.5            18                 8.33%        0      0      0         3     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      18
+  Dual bound        18
+  Gap               0% (tolerance: 0.01%)
+  Solution status   feasible
+                    18 (objective)
+                    0 (bound viol.)
+                    4.4408920985e-16 (int. viol.)
+                    0 (row viol.)
+  Timing            0.03 (total)
+                    0.00 (presolve)
+                    0.00 (postsolve)
+  Nodes             1
+  LP iterations     3 (total)
+                    0 (strong br.)
+                    0 (separation)
+                    0 (heuristics)

@@ -1,0 +1,10 @@
+README.md
+setup.py
+gethighs/__init__.py
+gethighs/highsfiles.py
+gethighs/solver.py
+gethighs.egg-info/PKG-INFO
+gethighs.egg-info/SOURCES.txt
+gethighs.egg-info/dependency_links.txt
+gethighs.egg-info/requires.txt
+gethighs.egg-info/top_level.txt
