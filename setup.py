@@ -15,7 +15,7 @@ base_kwargs = dict(
     packages = [BASE_PACKAGE] + [f"{BASE_PACKAGE}." + e for e in find_packages(where=BASE_PACKAGE)],
     version = '0.0.1',
     license='Apache License 2.0',
-    description = 'A Python interface to using HiGHS executable files on Pyomo.',
+    description = 'A Python interface to use HiGHS executable files with Pyomo',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author = 'Bruno Scalia C. F. Leite',

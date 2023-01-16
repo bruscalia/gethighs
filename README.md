@@ -1,6 +1,6 @@
 # gethighs
 
-A Python interface to using HiGHS executable files on Pyomo.
+A Python interface to use HiGHS executable files with Pyomo.
 
 ## Current alternatives
 
