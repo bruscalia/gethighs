@@ -4,7 +4,7 @@ A Python interface to use HiGHS executable files with Pyomo.
 
 ## Current alternatives
 
-### Appsi solvers
+### Appsi solver
 
 Pyomo has currently HiGHS appsi solver implemented, which works very well for systems in which *highspy* is available (and stable).
 
@@ -38,7 +38,9 @@ After dowloading the executables, it helps if they are included in system (or us
 
 gethighs is a small Python package which I developed for using HiGHS directly from executable files via the Pyomo interface. You can install it via pip + the github link:
 
-``pip install -e git+https://github.com/bruscalia/gethighs#gethighs``
+```
+pip install -e git+https://github.com/bruscalia/gethighs#gethighs
+```
 
 And also use it *almost* as a native pyomo solver.
 
