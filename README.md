@@ -55,8 +55,8 @@ $$
     \text{maximize}~~ & 5 x_{1} + 4 x_{2} \\
     \text{subject to}~~ & 2 x_{1} + 3 x_{2} \leq 12 \\
     & 2 x_{1} + x_{2} \leq 6 \\
-    & x_{i} \geq 0 & \forall \; i \in \{  1, 2 \} \\
-    & x_{i} \in \mathbb{Z} & \forall \; i \in \{  1, 2 \}
+    & x_{i} \geq 0 & \forall ~ i \in \left \{ 1, 2 \right \} \\
+    & x_{i} \in \mathbb{Z} & \forall ~ i \in \left \{ 1, 2 \right \}
 \end{align}
 $$
 
