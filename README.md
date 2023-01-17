@@ -28,7 +28,7 @@ If that's your case, keep with me a few more lines.
 
 First, make sure you have a highs executable file available in your computer.
 
-You can find HiGHS static executable files pre-compiled for several systems on [this link](https://github.com/JuliaBinaryWrappers/HiGHS_jll.jl/releases).
+You can find HiGHS static executable files pre-compiled for several systems on [this link](https://github.com/JuliaBinaryWrappers/HiGHSstatic_jll.jl/releases).
 
 More information is available on [HiGHS github page](https://github.com/ergo-code/highs).
 
