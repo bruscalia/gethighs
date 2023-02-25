@@ -33,7 +33,7 @@ base_kwargs = dict(
             'Mixed-integer programming'
         ],
     install_requires=[
-            'numpy>=1.19.*',
+            'numpy>=1.19.0',
             'pyomo==6.*',
         ],
 )
