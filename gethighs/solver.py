@@ -272,7 +272,7 @@ class HiGHS:
                         splt = objective_line.split(sep=" ", maxsplit=1)
                         try:
                             objective = float(splt[-1])
-                        except:
+                        except (ValueError, TypeError):
                             pass
                         continue
                     else:
