@@ -211,7 +211,7 @@ class HiGHS:
         cmd_line = \
             f"{self.executable} {cmd_time} --solution_file {solfile} {rsf}--options_file {options_file} {modelfile}"
         self.cmd_line = cmd_line
-        process = subprocess.Popen(cmd_line, shell=False)
+        process = subprocess.Popen(cmd_line, shell=True)
         time.sleep(sleep_time)
         while not os.path.exists(solfile):
             time.sleep(sleep_time)
@@ -254,7 +254,7 @@ class HiGHS:
         filename, map_id = model.write(filename, io_options={'symbolic_solver_labels': symbols})
         all_symbols = {}
         for symbol, obj in model.solutions.symbol_map[map_id].bySymbol.items():
-            all_symbols[symbol] = obj()
+            all_symbols[symbol] = obj
         self.all_symbols = all_symbols
         self.model = model
 
@@ -305,12 +305,9 @@ class HiGHS:
         with open(filename, "w") as file:
             file.write("Model status\n")
             file.write(f"Unknown\n\n")
-            # file.write(f"{self.status}\n\n")
             file.write("# Primal solution values\n")
             file.write(f"Unknown\n")
-            # file.write(f"{self.primal_solutions}\n")
             file.write(f"Objective Unknown\n")
-            # file.write(f"Objective {self.objective}\n")
             N = self.n_var
             file.write(f"# Columns {N}\n")
             for key, obj in self.all_symbols.items():
